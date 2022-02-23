@@ -10,9 +10,17 @@
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 
+<style>
+  #new-element {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+</style>
+
 <body>
 
   <div class="container text-center">
+    <div id="details-show" class="text-center border border-primary p-3 m-5"></div>
     <h1 class="text-center my-5">JsonPlaceHolder api</h1>
     <button onclick="gettingResponse()" class="btn btn-primary text-center p-3 fs-2">Get Response</button>
     <div class="" id="new-element"></div>
